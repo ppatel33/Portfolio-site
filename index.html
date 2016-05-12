@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<!-- Specifies the character encoding for html -->
+		<meta charset="utf-8">
+
+		<!-- Internet Explorer compatible -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Title Name -->
+		<title>	Project 	</title>
+
+		<!-- Include Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Lato:100,300"
+			rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Including jquery lib -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<!-- Container holds all the elements on page -->
+		<div class="container">
+			<div class="header row">
+					<div class="col-sm-12 text-left text-uppercase">
+						<h1 class="text-thin"> Jane Doette </h1>
+						<h3 class="text-thin"> Front-end Ninja</h3>
+					</div>
+			</div>
+
+			<!-- Line dividing header and main image -->
+			<div class="row col-md-12">
+					<hr>
+			</div>
+
+			<div class="main-body row">
+				<div class="col-md-12">
+
+					<!-- Carousel is for the image slide in middle part -->
+					<div id="myCarousel"
+						class="carousel slide"
+						data-ride="carousel">
+
+					<!-- setting number of slides i.e 4 slides with ordered lists -->
+
+						<ol class="carousel-indicators">
+							<li data-target="#slide1"
+								data-slide-to="0"
+								class="active">
+							</li>
+
+							<li data-target="#slide2"
+								data-slide-to="1">
+							</li>
+
+							<li data-target="#slide3"
+								data-slide-to="2">
+							</li>
+
+							<li data-target="#slide4"
+								data-slide-to="3">
+							</li>
+						</ol>
+
+				<!-- Setting images for slides -->
+
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="http://placeimg.com/1200/400/nature"
+									class="img-responsive"
+									alt="Main Image1">
+							</div>
+
+							<div class="item">
+								<img src="http://placeimg.com/1200/400/arch"
+									class="img-responsive"
+									alt="Main Image2">
+							</div>
+
+							<div class="item">
+								<img src="http://placeimg.com/1200/400/animal"
+									class="img-responsive"
+									alt="Main Image3">
+							</div>
+
+							<div class="item">
+								<img src="http://placeimg.com/1200/400/tech"
+									class="img-responsive"
+									alt="Main Image4">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-sub_header row">
+					<div class="col-md-12">
+
+						<!-- featured work and text-muted lightens the color -->
+						<h2 class="text-muted"> Featured work </h2>
+					</div>
+			</div>
+
+			<!-- List of projects -->
+			<div class="footer row text-center">
+				<div class="col-12 col-md-4">
+
+					<!-- changes the mouse pointer when moved on image of project 1 -->
+					<div class="projects mouse-onclick-area">
+						<img class="img-responsive"
+							src="http://placeimg.com/350/200/tech"
+							data-toggle="modal" data-target="#project1"
+							alt="Project 1">
+						<h3 class="text-uppercase"> Appify </h3>
+						<p> link </p>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4">
+
+						<!-- changes the mouse pointer when moved on image of project 2 -->
+						<div class="projects mouse-onclick-area">
+							<img class="img-responsive"
+								src="http://placeimg.com/350/200/animals"
+								data-toggle="modal" data-target="#project2"
+								alt="Project 2">
+							<h3 class="text-uppercase"> Sunflower </h3>
+							<p> link </p>
+						</div>
+				</div>
+
+				<div class="col-12 col-md-4">
+
+					<!-- changes the mouse pointer when moved on image of project 3 -->
+					<div class="projects mouse-onclick-area">
+						<img class="img-responsive"
+							src="http://lorempixel.com/350/200/"
+							data-toggle="modal" data-target="#project3"
+							alt="Project 3">
+						<h3 class="text-uppercase"> Bokeh </h3>
+						<p> link </p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal for displaying information when clicked on project1-->
+		<div class="modal fade" id="project1" tabindex="-1"
+			role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title" id="myModalLabel1">Appify</h3>
+					</div>
+					<div class="modal-body">
+						<img class="img-responsive"
+							src ="http://placeimg.com/350/200/tech"
+							alt="Project 1">
+						<h4>This was my first project in this class.
+							I learned a lot about HTML and CSS.
+							Bootstrap is awesome! Thank you for the wonderful course.
+						</h4>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default"
+							data-dismiss="modal">Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal for displaying information when clicked on project1-->
+		<div class="modal fade" id="project2" tabindex="-1"
+			role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title" id="myModalLabel2">Sunflower</h3>
+					</div>
+					<div class="modal-body">
+						<img class="img-responsive"
+						src ="http://placeimg.com/350/200/animals"
+						alt="Project 2">
+						<h4>This was my second project in this class.
+							I learned a lot about HTML and CSS.
+							Bootstrap is awesome! Thank you for the wonderful course.
+						</h4>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default"
+							data-dismiss="modal">Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal for displaying information when clicked on project1-->
+		<div class="modal fade" id="project3" tabindex="-1"
+			role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title" id="myModalLabel3">Bokeh</h3>
+					</div>
+					<div class="modal-body">
+						<img class="img-responsive"
+							src="http://lorempixel.com/350/200/"
+							alt="Project 3">
+						<h4>This was my third project in this class.
+							I learned a lot about HTML and CSS.
+							Bootstrap is awesome! Thank you for the wonderful course.
+						</h4>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default"
+							data-dismiss="modal">Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

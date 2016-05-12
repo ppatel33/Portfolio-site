@@ -1,0 +1,22 @@
+body {
+	font: 300 1em "Lato", sans-serif; /* font style */
+	color: #747704;
+}
+
+hr {
+	border: none;
+	height: 3px; /* thickness of line */
+	background-color: #bcbbbb; /* line color */
+}
+
+.text-muted {
+	color: #bcbbbb /* lighter color for text */
+}
+
+.text-thin {
+	font-weight: 100; /* thinner font */
+}
+
+.mouse-onclick-area{
+	cursor: pointer; /* change mouse pointer */
+}
